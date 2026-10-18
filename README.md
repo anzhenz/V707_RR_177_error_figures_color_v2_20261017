@@ -42,6 +42,9 @@
 
 两例RR新增FN的前一个最终KEEP均为FP：AP#1717的算法RR为201ms、专家相邻RR为628ms；AP#2497分别为266.5ms与617ms。
 这条状态链表明保留FP成为RR时间锚点，使后续真实心搏看起来提前。两例当前专家参考点均在波形窗内。
+两例均来自MITDB/105，且都先通过了模型阶段，再被RR Rule 2误删。其共同过程是：前一个FP被误保留，成为计算下一次RR的起点；后续真实心搏因此显得间隔过短，在同时满足Rule 2其他条件时被删除，形成新增FN。
+<img width="2015" height="1638" alt="image" src="https://github.com/user-attachments/assets/2f556ebc-7a9e-4564-a9ea-d31e6f4ca339" />
+<img width="2015" height="1638" alt="image" src="https://github.com/user-attachments/assets/e5b9ac52-c53d-4a5c-88b4-1851cf89ca10" />
 
 ## 实时性与本轮范围
 
